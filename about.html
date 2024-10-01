@@ -1,53 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>閻玟的自我介紹</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>
-        我是閻玟
-    </h1>
-    <p>
-        我是女生
-    </p>
-    <span>
-        我喜歡的youtube頻道
-    </span>
-    <a href="https://www.youtube.com/@ladyflavor_brain">打開連結
-    </a>
-    <img src="https://upload.wikimedia.org/wikipedia/zh/d/d8/Mario_NSMBW.png" alt="">
+    <div id="app">
+        <header class="profile-header">
+            <h1>閻玟的自我介紹</h1>
+            <h2>淡江大學資管系大三</h2>
+            <h3>2003/09/13</h3>
+            <p>最近剛滿21歲!</p>
+        </header>
 
-    <ul>
-        <li>因為好笑</li>
-        <li>因為可愛</li>
-        <li>因為溫馨</li>
-    </ul>
+        <section class="skills-section card">
+            <h4>興趣</h4>
+            <ul>
+                <li>烹飪</li>
+                <li>打羽毛球</li>
+                <li>K-pop, K-drama</li>
+            </ul>
+        </section>
 
-    <ol>
-        <li>阿</li>
-        <li>喔</li>
-        <li>恩</li>
-        <li>呀</li>
-    </ol>
+        <section class="experience-section card">
+            <h4>經歷</h4>
+            <ul>
+                <li><em>2018</em>&nbsp;<strong>中正高中</strong>
+                    <ol>
+                        <li>舞蹈研究社</li>
+                    </ol>
+                </li>
+                <li><em>2024</em>&nbsp;<strong>大二暑假</strong>
+                    <ol>
+                        <li>參與2024 WAT計畫</li>
+                        
+                    </ol>
+                </li>
+            </ul>
+        </section>
 
-    <form action="/submit" method="post">
-        <lebel for="name">姓名:</lebel>
-        <input type="text" id="name" name="name">
-        <input type="submit" value="提交">
-    </form>
+        <section class="certification-section card">
+            <h4>喜歡的K-pop團體</h4>
+            <div class="cert-item">
+                <h5>BOYNEXTDOOR</h5>
+                <img width="150" src="https://kpopreviewed.com/wp-content/uploads/2024/09/boynextdoor-newguy.png?w=1200&h=628&crop=1">
+            </div>
+            <div class="cert-item">
+                <h5>Le sserafim</h5>
+                <img width="150" src="https://a.ksd-i.com/s/480x_86400_6c52175c4192b0d66013d2e54b8eb586/static.koreastardaily.com/2024-08-30/154766-1012407.jpg">
+            </div>
+        </section>
 
-    <table>
-        <tr>
-            <th>名稱</th>
-            <th>年齡</th>
-        </tr>
-        <tr>
-            <td>小明</td>
-            <td>20</td>
-        </tr>
-    </table>
+        <section class="cert-info-section card">
+            <h4>更深入認識這些團體</h4>
+            <table>
+                <tr>
+                    <th>團體名稱</th>
+                    <th>youtube頻道</th>
+                </tr>
+                <tr>
+                    <td>BOYNEXTDOOR</td>
+                    <td><a href="https://www.youtube.com/@boynextdoor_official">點擊前往頻道</a></td>
+                </tr>
+                <tr>
+                    <td>Le sserafim</td>
+                    <td><a href="https://www.youtube.com/@LESSERAFIM_official">點擊前往頻道</a></td>
+                </tr>
+            </table>
+        </section>
 
+        <section class="comments-section card">
+            <h4>有更多問題的嗎?</h4>
+            <form action="/submit" method="post">
+                <label for="comment">發送留言:</label>
+                <input type="text" id="comment" name="comment" placeholder="輸入你的疑問">
+                <input type="submit" value="提交">
+            </form>
+            <p><span class="highlight">抱歉，留言功能暫不開放</span></p>
+        </section>
+    </div>
 </body>
+
 </html>
